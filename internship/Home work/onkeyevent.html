@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" onkeyup="showText(this.value)">
+        <p id="output"></p>
+        <script>
+            function showText(value){
+                document.getElementById("output").innerText=value;
+            }
+        </script>
+    </body>
+</html>

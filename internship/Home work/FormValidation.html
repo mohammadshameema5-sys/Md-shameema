@@ -1,0 +1,21 @@
+<html lang="en">
+    <head>
+        <body>
+            <form onsubmit="return validateForm()">
+                <input type="text" id="name">
+                <button type="submit">Submit</button>
+            </form>
+            <script>
+                function validateForm() {
+                    let name = document.getElementById("name").value;
+                    if (name === "") {
+                        alert("Name is required");
+                        return false;
+                    }
+                    alert("Form Submitted");
+                    return true;
+                }
+            </script>
+        </body>
+    </head>
+</html>
